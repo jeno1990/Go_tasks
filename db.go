@@ -22,7 +22,6 @@ func initStorage(db *sql.DB) {
 	if err != nil {
 		log.Fatal(err)
 	}
-	log.Println("Connected to database")
 }
 
 func addTask(db *sql.DB, task Task) (sql.Result, error) {
